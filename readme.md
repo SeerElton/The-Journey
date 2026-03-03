@@ -12,28 +12,21 @@ A full-stack e-commerce product catalog management system built with **ASP.NET C
 
 ## 🎬 Video Demo (Excuse me, i've rounded off my english to the nearest zulu)
 
-> **Note:** To view the videos, please download them or watch via the links below.
-> 
-> GitHub does not support inline video playback from repository files. To enable playback:
-> 1. Go to the [Issues](https://github.com/SeerElton/The-Journey/issues) tab
-> 2. Create a new issue and drag-drop your video files into the comment
-> 3. GitHub will generate playable URLs you can paste here
+> **Note:** The assessment recommended using Loom for video uploads, but unfortunately the Loom upload button wasn't functioning at the time of submission. I've uploaded the demo to YouTube instead.
 
-### Video 1: OMG, what just happened? I prompted by mistake then realized that the project is small so its safe to do this
+### 📺 Full Demo & Code Walkthrough
 
-[🎥 Click to download and watch Video 1](https://github.com/SeerElton/The-Journey/raw/main/videos/Video%201.webm)
+[![Video Demo](https://img.youtube.com/vi/kbs0YWM3OZI/maxresdefault.jpg)](https://youtu.be/kbs0YWM3OZI)
+
+**🔗 Watch on YouTube:** [https://youtu.be/kbs0YWM3OZI](https://youtu.be/kbs0YWM3OZI)
 
 ---
 
-### Video 2: I also figured i could fix my P.C with a prompt, it had this problem since i bought it 
+### Additional Recording Clips (Raw footage in repository)
 
-[🎥 Click to download and watch Video 2](https://github.com/SeerElton/The-Journey/raw/main/videos/Video%202.webm)
-
----
-
-### Video 3: The app works, hooray
-
-[🎥 Click to download and watch Video 3](https://github.com/SeerElton/The-Journey/raw/main/videos/Video%203.webm)
+- [Video 1: Initial AI prompt & project setup](https://github.com/SeerElton/The-Journey/raw/main/videos/Video%201.webm)
+- [Video 2: PC troubleshooting with AI](https://github.com/SeerElton/The-Journey/raw/main/videos/Video%202.webm)  
+- [Video 3: App demo - it works!](https://github.com/SeerElton/The-Journey/raw/main/videos/Video%203.webm)
 
 ---
 
