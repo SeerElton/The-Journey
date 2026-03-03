@@ -1,58 +1,47 @@
 # Helm Charts
 
-This directory contains Helm charts for Kubernetes deployment.
+Kubernetes deployment charts for Product Catalog Management System.
 
-## Overview
+## Charts
 
-Helm charts for deploying The Journey application to Kubernetes clusters.
+### product-catalog
 
-## Prerequisites
+Main application chart containing:
+- API service (ASP.NET Core)
+- Client service (Angular)
+- Ingress configuration
+- Service accounts
 
-- Kubernetes cluster (v1.20+)
-- Helm 3.x installed
-- kubectl configured
-
-## Usage
-
-### Install
+## Quick Start
 
 ```bash
-helm install the-journey ./helm
-```
+# Install with default values
+helm install product-catalog ./product-catalog
 
-### Upgrade
+# Install with staging values
+helm install product-catalog ./product-catalog -f ./product-catalog/values-staging.yaml
 
-```bash
-helm upgrade the-journey ./helm
-```
-
-### Uninstall
-
-```bash
-helm uninstall the-journey
+# Install with production values
+helm install product-catalog ./product-catalog -f ./product-catalog/values-production.yaml
 ```
 
 ## Configuration
 
-Customize deployment by modifying `values.yaml`:
+See `values.yaml` for all available options.
 
-```yaml
-replicaCount: 1
-image:
-  repository: the-journey
-  tag: latest
-  pullPolicy: IfNotPresent
-```
+### Key Values
 
-## Structure
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| `api.replicaCount` | API replicas | 2 |
+| `api.image.tag` | API image tag | latest |
+| `client.replicaCount` | Client replicas | 2 |
+| `client.image.tag` | Client image tag | latest |
+| `ingress.enabled` | Enable ingress | true |
+| `ingress.hosts` | Ingress hosts | product-catalog.local |
 
-```
-helm/
-├── Chart.yaml          # Chart metadata
-├── values.yaml         # Default configuration values
-├── templates/          # Kubernetes manifest templates
-│   ├── deployment.yaml
-│   ├── service.yaml
-│   └── ingress.yaml
-└── charts/             # Chart dependencies
-```
+## Environments
+
+- `values.yaml` - Default/development
+- `values-staging.yaml` - Staging environment
+- `values-production.yaml` - Production environment

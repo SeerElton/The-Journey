@@ -1,0 +1,113 @@
+# Default values for product-catalog
+# This is a YAML-formatted file.
+
+# ============================================
+# Global Settings
+# ============================================
+global:
+  imageRegistry: ""
+  imagePullSecrets: []
+
+# ============================================
+# API Service
+# ============================================
+api:
+  replicaCount: 2
+  
+  image:
+    repository: product-catalog-api
+    pullPolicy: IfNotPresent
+    tag: "latest"
+  
+  service:
+    type: ClusterIP
+    port: 80
+  
+  resources:
+    limits:
+      cpu: 500m
+      memory: 512Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
+  
+  env:
+    ASPNETCORE_ENVIRONMENT: Production
+    USE_IN_MEMORY_DB: "true"
+  
+  healthCheck:
+    path: /health
+    initialDelaySeconds: 10
+    periodSeconds: 30
+  
+  autoscaling:
+    enabled: false
+    minReplicas: 2
+    maxReplicas: 10
+    targetCPUUtilizationPercentage: 80
+
+# ============================================
+# Client Service
+# ============================================
+client:
+  replicaCount: 2
+  
+  image:
+    repository: product-catalog-client
+    pullPolicy: IfNotPresent
+    tag: "latest"
+  
+  service:
+    type: ClusterIP
+    port: 80
+  
+  resources:
+    limits:
+      cpu: 200m
+      memory: 256Mi
+    requests:
+      cpu: 50m
+      memory: 64Mi
+  
+  autoscaling:
+    enabled: false
+    minReplicas: 2
+    maxReplicas: 10
+    targetCPUUtilizationPercentage: 80
+
+# ============================================
+# Ingress Configuration
+# ============================================
+ingress:
+  enabled: true
+  className: nginx
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  hosts:
+    - host: product-catalog.local
+      paths:
+        - path: /
+          pathType: Prefix
+          service: client
+        - path: /api
+          pathType: Prefix
+          service: api
+  tls: []
+
+# ============================================
+# Service Account
+# ============================================
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+# ============================================
+# Pod Settings
+# ============================================
+podAnnotations: {}
+podSecurityContext: {}
+securityContext: {}
+nodeSelector: {}
+tolerations: []
+affinity: {}

@@ -1,0 +1,50 @@
+# Staging Environment Values
+
+api:
+  replicaCount: 1
+  
+  image:
+    tag: "staging"
+  
+  env:
+    ASPNETCORE_ENVIRONMENT: Staging
+    USE_IN_MEMORY_DB: "true"
+    LOG_LEVEL: Information
+  
+  resources:
+    limits:
+      cpu: 300m
+      memory: 384Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
+
+client:
+  replicaCount: 1
+  
+  image:
+    tag: "staging"
+  
+  resources:
+    limits:
+      cpu: 150m
+      memory: 192Mi
+    requests:
+      cpu: 50m
+      memory: 64Mi
+
+ingress:
+  enabled: true
+  hosts:
+    - host: staging.product-catalog.example.com
+      paths:
+        - path: /
+          pathType: Prefix
+          service: client
+        - path: /api
+          pathType: Prefix
+          service: api
+  tls:
+    - secretName: staging-tls
+      hosts:
+        - staging.product-catalog.example.com

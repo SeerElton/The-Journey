@@ -1,0 +1,16 @@
+apiVersion: v2
+name: product-catalog
+description: A Helm chart for Product Catalog Management System
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+
+keywords:
+  - product-catalog
+  - angular
+  - dotnet
+  - api
+
+maintainers:
+  - name: Product Catalog Team
+    email: team@example.com
