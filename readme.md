@@ -12,26 +12,28 @@ A full-stack e-commerce product catalog management system built with **ASP.NET C
 
 ## 🎬 Video Demo (Excuse me, i've rounded off my english to the nearest zulu)
 
+> **Note:** To view the videos, please download them or watch via the links below.
+> 
+> GitHub does not support inline video playback from repository files. To enable playback:
+> 1. Go to the [Issues](https://github.com/SeerElton/The-Journey/issues) tab
+> 2. Create a new issue and drag-drop your video files into the comment
+> 3. GitHub will generate playable URLs you can paste here
+
 ### Video 1: OMG, what just happened? I prompted by mistake then realized that the project is small so its safe to do this
-https://github.com/user-attachments/assets/videos/Video%201.webm
 
-<video src="videos/Video%201.webm" controls width="100%"></video>
-
-[📥 Download Video 1](videos/Video%201.webm)
+[🎥 Click to download and watch Video 1](https://github.com/SeerElton/The-Journey/raw/main/videos/Video%201.webm)
 
 ---
 
 ### Video 2: I also figured i could fix my P.C with a prompt, it had this problem since i bought it 
-<video src="videos/Video%202.webm" controls width="100%"></video>
 
-[📥 Download Video 2](videos/Video%202.webm)
+[🎥 Click to download and watch Video 2](https://github.com/SeerElton/The-Journey/raw/main/videos/Video%202.webm)
 
 ---
 
 ### Video 3: The app works, hooray
-<video src="videos/Video%203.webm" controls width="100%"></video>
 
-[📥 Download Video 3](videos/Video%203.webm)
+[🎥 Click to download and watch Video 3](https://github.com/SeerElton/The-Journey/raw/main/videos/Video%203.webm)
 
 ---
 
