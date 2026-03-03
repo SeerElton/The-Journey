@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+packages/
+
+# Build outputs
+dist/
+bin/
+obj/
+out/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Angular
+.angular/
+
+# .NET
+*.dll
+*.exe
+*.pdb
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Test results
+coverage/
+TestResults/
