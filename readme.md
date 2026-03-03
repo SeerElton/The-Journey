@@ -22,14 +22,6 @@ A full-stack e-commerce product catalog management system built with **ASP.NET C
 
 ---
 
-### Additional Recording Clips (Raw footage in repository)
-
-- [Video 1: Initial AI prompt & project setup](https://github.com/SeerElton/The-Journey/raw/main/videos/Video%201.webm)
-- [Video 2: PC troubleshooting with AI](https://github.com/SeerElton/The-Journey/raw/main/videos/Video%202.webm)  
-- [Video 3: App demo - it works!](https://github.com/SeerElton/The-Journey/raw/main/videos/Video%203.webm)
-
----
-
 ## ✅ Assessment Requirements Checklist
 
 ### Backend Requirements (C# Web API)
