@@ -20,6 +20,8 @@ A full-stack e-commerce product catalog management system built with **ASP.NET C
 
 **🔗 Watch on YouTube:** [https://youtu.be/kbs0YWM3OZI](https://youtu.be/kbs0YWM3OZI)
 
+> **⚠️ Corrections:** In the video, I mistakenly say "ChatGPT" when I mean "GitHub Copilot," and "design principles" when I mean "design patterns."
+
 ---
 
 ## ✅ Assessment Requirements Checklist
