@@ -8,18 +8,6 @@ A full-stack e-commerce product catalog management system built with **ASP.NET C
 
 **This project was built with AI assistance.** I instructed GitHub Copilot (Claude) to implement this take-home assessment based on the provided requirements specification. The AI generated the code, architecture, and documentation under my direction and supervision.
 
----
-
-## 🎬 Video Demo (Excuse me, i've rounded off my english to the nearest zulu)
-
-> **Note:** The assessment recommended using Loom for video uploads, but unfortunately the Loom upload button wasn't functioning at the time of submission. I've uploaded the demo to YouTube instead.
-
-**🔗 Watch on YouTube:** [https://youtu.be/kbs0YWM3OZI](https://youtu.be/kbs0YWM3OZI)
-
-> **⚠️ Corrections:** In the video, I mistakenly say "ChatGPT" when I mean "GitHub Copilot," and "design principles" when I mean "design patterns."
-
----
-
 ## ✅ Assessment Requirements Checklist
 
 ### Backend Requirements (C# Web API)
